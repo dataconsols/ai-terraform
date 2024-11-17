@@ -1,0 +1,117 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+#recommendationsContainer {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#recommendationsContainer h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+#recommendationsContainer label {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 14px;
+  width: 80%;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+textarea {
+  margin-top: 10px;
+  width: 100%;
+}
+
+pre {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  overflow-x: auto;
+}
+
+/* Style for the editing input field */
+.editing-input {
+  border: 2px solid blue; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  padding: 5px; /* Add some padding for better UX */
+  transition: border-color 0.3s; /* Add a transition for a smoother effect */
+}
+
+/* Optional: Style for the container when editing */
+.editing-container {
+  background-color: #f0f8ff; /* Light background color for the editing state */
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bounce1,
+.bounce2,
+.bounce3 {
+  width: 10px;
+  height: 10px;
+  background-color: #3498db;
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.bounce1 {
+  animation-delay: -0.32s;
+}
+.bounce2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
